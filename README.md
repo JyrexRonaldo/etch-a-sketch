@@ -1,0 +1,1 @@
+This is project is to practice my DOM manipulation skills.
