@@ -13,8 +13,18 @@ button.addEventListener('click', () => {
 for (let i = 0; i <= 10000; i++) {
     const div = document.createElement('div');
     container.appendChild(div);
+    let count = 0;
+    let n = 100;
     div.addEventListener('mouseover', (e) => {
-        e.target.style.backgroundColor = `hsl(${randomHue()}, 100%, 50%)`;
+        if (e.target.style.backgroundColor = true) {
+            while (count <= 9) {
+                n = n - 10;
+                console.log(n);
+                e.target.style.backgroundColor = `hsl(${randomHue()}, 100%, ${n}%)`;
+                break;        
+            }
+            count++;   
+        }
     });
 
     button.addEventListener('click', () => {
