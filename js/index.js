@@ -34,6 +34,8 @@ for (let i = 0; i <= 10000; i++) {
         div.style.backgroundColor = 'white';
         div.style.height = `${600 / size}px`;
         div.style.width = `${600 / size}px`;
+        count = 0;
+        n = 100;
     });
 
 }
