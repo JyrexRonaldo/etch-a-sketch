@@ -24,9 +24,10 @@ function createGrid(size = 16) {
 function changeColor() {
     const grids = document.querySelectorAll('.container div');
     grids.forEach((grid) => {
+        let darkness = 10;
         grid.addEventListener('mouseover', (e) => {
-            e.target.style.backgroundColor = `hsl(${getColorHue(361)} 100% 50%)`;
-
+            e.target.style.backgroundColor = `hsl(${getColorHue(361)} 100% ${100 - darkness}%)`;
+            darkness += 10;
         });
     })
 }
