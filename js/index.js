@@ -25,7 +25,12 @@ function changeColor() {
     const grids = document.querySelectorAll('.container div');
     grids.forEach((grid) => {
         grid.addEventListener('mouseover', (e) => {
-            e.target.style.backgroundColor = 'yellow';
+            e.target.style.backgroundColor = `hsl(${getColorHue(361)} 100% 50%)`;
+
         });
     })
+}
+
+function getColorHue(number) {
+    return Math.floor(Math.random() * number);
 }
